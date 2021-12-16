@@ -1,1 +1,29 @@
 // Specific CSS for your home-page
+.home-page-header {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.btn-home {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-start {
+  background-color: #436690;
+  color: white;
+  border: 1px solid #436690 ;
+  font-size: 17px;
+  margin-top: 10px;
+  padding: 8px 22px;
+  border-radius: 50px;
+  font-weight: bolder;
+  opacity: 0.9;
+    &:hover {
+      color: white;
+      background-color: #436690;
+      opacity: 1;
+      transition: 0.5s;
+    }
+}
