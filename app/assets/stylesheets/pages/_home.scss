@@ -1,13 +1,35 @@
 // Specific CSS for your home-page
-.home-page-header {
+.homepage-header {
+  padding-bottom: 10rem;
+}
+
+.homepage-image {
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 45px 0;
 }
 
 .btn-home {
   display: flex;
   justify-content: center;
+}
+
+.btn-works {
+  background-color: #436690;
+  color: white;
+  border: 1px solid #436690 ;
+  font-size: 17px;
+  margin-top: 10px;
+  padding: 8px 22px;
+  border-radius: 50px;
+  font-weight: bolder;
+  opacity: 0.9;
+    &:hover {
+      color: white;
+      background-color: #436690;
+      opacity: 1;
+      transition: 0.5s;
+    }
 }
 
 .btn-start {
@@ -26,4 +48,48 @@
       opacity: 1;
       transition: 0.5s;
     }
+}
+
+#homepage-subtitle {
+  padding-top: 35px;
+  text-align: center;
+}
+
+.title {
+  font-weight: bolder;
+  color: #436690;
+  font-size: 42px;
+}
+
+.app-description {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.card-title {
+  font-weight: bolder;
+  color: #436690;
+  font-size: 24px;
+}
+
+.description {
+  font-weight: lighter;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 300px;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  padding: 20px;
 }
