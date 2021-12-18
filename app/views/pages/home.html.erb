@@ -50,14 +50,14 @@
     <p class='app-description'>Make sure to fill out every field so that DOGTOR can give you the right diagnosis!</p>
   </div>
 
-  <div class='container placeholder'>
-    <div class='cards'>
-      <div class='card'>
-        <img src='https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png' alt='fun'>
-        <h2 class='card-title'>Form here</h2>
-        <p class='description'><strong>I'm having trouble with the form and blanking on how to get from API</p>
-      </div>
-    </div>
+  <div class='container'>
+    <%= simple_form_for @dog do |f|  %>
+      <%= f.input :name %>
+      <%= f.input :breed %>
+      <%= f.input :height %>
+      <%= f.input :weight %>
+      <%= f.button :submit %>
+    <% end %>
   </div>
   <hr class='divider'>
   <div class='btn-home'>
